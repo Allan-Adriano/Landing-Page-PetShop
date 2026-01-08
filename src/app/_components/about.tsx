@@ -7,12 +7,12 @@ import { WhatsappLogoIcon, MapPinAreaIcon } from "@phosphor-icons/react/dist/ssr
 export function About() {
     return (
         <section className="bg-[#FDf6ec] py-16">
-            
+
             <div className="container px-4 mx-auto ">
 
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-
-                    <div className="relative">
+                    
+                    <div className="relative" data-aos="fade-right" >
 
                         <div className="relative w-full h-[400px] rounded-3xl overflow-hidden">
                             <Image
@@ -25,7 +25,7 @@ export function About() {
                             />
                         </div>
 
-                        <div className="absolute w-40 h-40 right-4 -bottom-8 overflow-hidden rounded-lg border-4  border-white-smolk">
+                        <div className="absolute w-40 h-40 right-4 -bottom-8 overflow-hidden rounded-lg border-4  border-white-smolk" data-aos="fade-up" data-aos-delay="300">
                             <Image
                                 src={about2Img}
                                 alt="Foto do gatinho"
@@ -34,11 +34,9 @@ export function About() {
                                 priority
                             />
                         </div>
-
                     </div>
 
-                    <div className="space-y-6 mt-10">
-
+                    <div className="space-y-6 mt-10" data-aos="fade-left">
                         <h2 className="text-4xl font-bold">Sobre</h2>
                         <p>
                             Until one has loved an animal, a part of one's soul remains unawakened.
@@ -48,7 +46,6 @@ export function About() {
                         </p>
 
                         <ul className="space-y-4">
-
                             <li className="flex items-center gap-2">
                                 <Check className="text-[#81A96D]" />
                                 Aberto desde 2026
@@ -63,14 +60,15 @@ export function About() {
                                 <Check className="text-[#81A96D]" />
                                 Qualidade e atendimento humano é nossa prioridade
                             </li>
-
                         </ul>
 
-                        <div className="flex gap-2">
-
+                        <div className="flex gap-2" >
                             <a
-                                href=""
-                                className="bg-[#105E4D] text-white flex items-center justify-center w-fit gap-2 px-4 py-2 rounded-md"
+                                target="_blanck"
+                                href={
+                                    "https://wa.me//55849991334?text=Olá vim pelo site e gostaria de mais informações"
+                                }
+                                className="bg-[#105E4D] text-white flex items-center justify-center w-fit gap-2 px-4 py-2 rounded-md" data-aos="zoom-in-right"
                             >
                                 <WhatsappLogoIcon className="w-5 h-5 text-white" />
                                 Contato via WhatsApp
@@ -78,18 +76,14 @@ export function About() {
 
                             <a
                                 href="#"
-                                className=" flex items-center justify-center w-fit gap-2 px-4 py-2 rounded-md border-3 "
+                                className=" flex items-center justify-center w-fit gap-2 px-4 py-2 rounded-md border-3 " data-aos="zoom-in-left"
                             >
                                 <MapPinAreaIcon className="w-5 h-5 text-black" />
                                 Endereço da Loja
                             </a>
-
                         </div>
-
                     </div>
-
                 </div>
-
             </div>
         </section>
     );

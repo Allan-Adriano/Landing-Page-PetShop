@@ -23,9 +23,9 @@ const brands = [
 export function Footer() {
     return (
         <section className="bg-[#105E4D] py-16 text-white">
-            <div className="container mx-auto px-4">
+            <div className="container mx-auto px-4" data-aos="fade-down" data-aos-delay="700">
                 <div className="border-b border-white/20 pb-8">
-                    <h4 className="text-3xl font-semibold mb-8 text-center"> Marcas parceiras</h4>
+                    <h4 className="text-3xl font-semibold mb-8 text-center" data-aos="fade-down" data-aos-delay="500"> Marcas parceiras</h4>
 
                     <div className="grid grid-cols-2 lg:grid-cols-6 gap-8">
                         {brands.map((item, index) => (
@@ -53,7 +53,13 @@ export function Footer() {
                         <p className="mb-4">
                             Semper cuidando do seu melhor amigo com amor e profissionalismo
                         </p>
-                        <a href="#" className="bg-green-500 px-4 py-2 rounded-md">
+                        <a
+                            target="_blanck"
+                            href={
+                                "https://wa.me//55849991334?text=Olá vim pelo site e gostaria de mais informações"
+                            }
+                            className="bg-green-500 px-4 py-2 rounded-md"
+                        >
                             Contato via WhatsaApp
                         </a>
                     </div>

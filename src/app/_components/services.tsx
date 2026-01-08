@@ -67,16 +67,12 @@ export function Services() {
     }
 
     return (
-        <section className="bg-white py-16">
-
-            <div className="container mx-auto px-4">
-                
+        <section className="bg-white py-16" >
+            <div className="container mx-auto px-4" data-aos="fade-down" data-aos-delay="700">
                 <h2 className="text-4xl font-bold mb-12">Nossos serviços</h2>
 
                 <div className="relative">
-
                     <div className="overflow-hidden" ref={emblaRef}>
-
                         <div className="flex">
                             {services.map((item, index) => (
                                 <div
@@ -84,9 +80,7 @@ export function Services() {
                                     className="flex-[0_0_100%] min-w-0 md:flex-[0_0_calc(100%/3)] px-3"
                                 >
                                     <article className="bg-[#81A96D] text-white rounded-2xl p-6 space-y-4 h-full flex flex-col select-none">
-
                                         <div className="flex-1 flex items-start justify-between">
-
                                             <div className="flex gap-3">
                                                 <span className="text-3xl">{item.icon}</span>
 
@@ -98,35 +92,28 @@ export function Services() {
                                                         {item.description}
                                                     </p>
                                                 </div>
-
                                             </div>
-
                                         </div>
 
                                         <div className="border-t border-white-700 pt-4 flex items-center justify-between">
-
                                             <div className="flex items-center gap-2 text-sm">
                                                 <Clock className=" w-4 h-4" />
                                                 <span>{item.duration}</span>
                                             </div>
 
                                             <a
-                                                href="#"
+                                                target="_blank"
+                                                href={`https://wa.me//55849991334?text=Olá vim pelo site e gostaria de mais informações sobre ${item.title}`}
                                                 className="flex items-center justify-center gap-2 hover:text-green-600 transition-colors duration-430 ease-in-out"
                                             >
                                                 <WhatsappLogoIcon className="w-5 h-5" />
                                                 Entrar em contato
                                             </a>
-
                                         </div>
-
                                     </article>
-
                                 </div>
                             ))}
-
                         </div>
-
                     </div>
 
                     <button
@@ -141,11 +128,8 @@ export function Services() {
                     >
                         <ChevronRight className="w-6 h-6 text-gray-600 " />
                     </button>
-
                 </div>
-
             </div>
-
         </section>
     );
 }

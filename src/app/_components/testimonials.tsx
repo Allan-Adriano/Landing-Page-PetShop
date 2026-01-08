@@ -53,7 +53,7 @@ export function Testimonials() {
     return (
         <section className="bg-[#1C3F3B] py-16">
 
-            <div className="container mx-auto px-4">
+            <div className="container mx-auto px-4" data-aos="fade-up" data-aos-delay="1000">
 
                 <h2 className="text-4xl font-bold mb-12 text-center text-white">
                     Depoimento dos nossos clientes
